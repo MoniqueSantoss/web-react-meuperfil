@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{height: 100%;}
+
+  body {
+      background-image: linear-gradient(#6666FF, #FFB266);  
+  }
+  .sidebar{
+    float: left;
+    width: 300px;
+    padding: 3px 5px;
+    height: 70%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: transparent;
+    margin-top: 7%;
+    margin-left: 9%;
+    
+}
+
+.sidebar img{
+    width:100%;
+    height: calc(100% - 6px);
+    border-radius:30px;
+}
+
+/* parte principal*/
+
+.main{
+    width: calc(75% - 300px);
+    background-color: white;
+    height: 69%;
+    float: left;
+    padding: 15px 50px;
+    margin-left: 20px;
+    margin-top: 7%;
+    overflow-y: auto; 
+    border-radius:30px;
+}
+
+.menu ul li a img {
+    width:30px;
+    height:30px;
+}
+
+.conteudo {
+    margin: 3% ;
+    display: block;
+    
+}
+
+.form {
+    margin: 3% ;
+    display: none;
+    
+}
+.conteudo h1{
+    margin-bottom: 5px;
+}
+
+.conteudo p {
+    margin-bottom:10px;
+}
+
+.conteudo input {
+    border-radius: 5px;
+}
+
+.menu {
+    width: 15%;
+    margin-top: 8%; 
+    padding: 0;
+    float: right;
+}
+
+.menu ul li {
+    margin: 10px; 
+    padding: 0px;
+    list-style-type: none;
+}
+
+.menu a:link {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+}
+
+.contato{
+    width: 100px;
+    height:30px;
+    background-color:#6666FF; 
+    border-radius:5px;
+    color:white;
+}
+
+.enviar{
+    width: 100px;
+    height:30px;
+    background-color:#faa957;
+    border-radius:5px;
+    color:white;
+}
+
+/*------------------------------*/
+@media screen and (max-width:1700px) {
+    .main__col{
+        width:20%;
+    } 
+}
+
+.ma{
+			
+    float: left;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0px 10px 10px 0;
+    max-width: 190px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .main{
+        width:100%;
+    }
+    .sidebar{
+        display:none;
+    }
+    .main__col{
+        width:48%;
+        margin-right: 2%;
+    } 
+}

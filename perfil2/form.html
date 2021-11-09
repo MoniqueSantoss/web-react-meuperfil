@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="monique">
+	<meta name="description" content="js">
+
+	<title>portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+	<script> 
+
+		function toggleDiv() {
+		  if(document.getElementById("conteudo").style.display == 'none') {
+			document.getElementById("conteudo").style.display = 'block';
+			document.getElementById("form").style.display = 'none';
+		  } else {
+			document.getElementById("conteudo").style.display = 'none';
+			document.getElementById("form").style.display = 'block';
+		  }
+			
+		}
+			  
+		</script>
+
+</head>
+<body>
+
+<!--<form name="formulario" action="" > 
+<p><b>Nome:</b><br>
+<input type=text name="nome" size="45"></p><br>
+<p><b>Email:</b><br>
+<input type=text name="email" size="45"></p><br>
+<p><b>Mensagem:</b><br>
+<textarea name="Mensagem" rows="10" cols="60" wrap="virtual"></textarea></p><br>
+<p><input type="submit" value="Enviar Email">
+</form>
+
+
+		<form action="https://google.com">
+			<input type="submit" value="Sobre Mim" />
+		</form>
+
+-->
+
+<div class="sidebar">
+	<img src="img/image.jpg"/>
+</div><!-- /sidebar -->
+
+<div class="main">
+	<div class="menu">
+		<ul>
+			<li><a href="https://www.linkedin.com/in/monique-santos-mota-43134a180/"><img src="img/linkedin.png"></a></li>
+			<li><a href="https://github.com/peixes12/"><img src="img/github (1).png"></a></li>
+		</ul>
+	</div>
+	<div class="conteudo" id="conteudo">
+		
+		<h2>Dados Pessoais </h2>
+		<p>
+			Nome : Monique S. M. <br/>
+			Idade : 12/03/03 <br/>
+			Nacionalidade : Brasileira <br/>
+			Tel:(00) 999999999
+	    </p>
+
+		<h2>Formação</h2>
+		<p>
+			Ensino Médio : Olga cury 2018-2019<br/>
+			Técnico : Análise e Desenvolvimento de Sistemas-Etec  2018-2019<br/>
+			Superior : Ciência da Computação-Unip  2020-2023	    
+		</p>
+
+		<h2>Experiência</h2>
+		<p>
+			Exercícios práticos em sala de aula .
+	    </p>
+		<button class="contato" onclick="toggleDiv()">Contate-me </button>
+	</div>
+	<div class="form" id="form">
+		<form name="formulario" action="" > 
+			<p><b>Nome da Empresa:</b><br>
+			<input type=text name="nome" size="45"></p><br>
+			<p><b>Email:</b><br>
+			<input type=text name="email" size="45"></p><br>
+			<p><b>Mensagem:</b><br>
+			<textarea name="Mensagem" rows="10" cols="45" wrap="virtual"></textarea></p><br>
+			<p>
+			<button class="enviar" onclick="toggleDiv()">Enviar</button>
+		</form>
+	</div>
+
+</div> <!--/main -->
+</body>
+</html>
+
